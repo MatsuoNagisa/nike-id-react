@@ -1,6 +1,6 @@
-import Link from 'next/link'
-import React from 'react'
-import styles from "./Header.module.css"
+import Link from "next/link";
+import React from "react";
+import styles from "./Header.module.css";
 
 export const Header = () => {
   return (
@@ -8,11 +8,15 @@ export const Header = () => {
       <header className={styles.header}>
         <nav className={styles.gnav}>
           <ul>
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/mylist">My List</Link></li>
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/mylist">My List</Link>
+            </li>
           </ul>
         </nav>
       </header>
     </>
-  )
-}
+  );
+};
